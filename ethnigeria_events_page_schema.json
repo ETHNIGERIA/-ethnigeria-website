@@ -1,0 +1,47 @@
+{
+  "page": "Events",
+  "url": "ethnigeria.org/events",
+  "description": "Interactive events page showcasing upcoming and past Ethereum-focused events in Nigeria...",
+  "sections": [
+    {
+      "id": "hero",
+      "title": "ETHNigeria Events",
+      "components": [
+        {
+          "type": "banner",
+          "content": {
+            "image": "hero-banner.jpg",
+            "text": "Experience Ethereum with Nigerian Spirit",
+            "cta": { "text": "Discover Events", "link": "#upcoming-events" },
+            "cultural_elements": [
+              { "type": "background_pattern", "description": "Adire textile patterns fading into Ethereum diamonds" }
+            ]
+          },
+          "style": { "background": "Gradient of green (#008000), white (#FFFFFF), Ethereum purple (#3C3C3D), Igbo red (#D82C2C)" }
+        }
+      ]
+    },
+    {
+      "id": "event-map",
+      "title": "Event Map",
+      "components": [
+        {
+          "type": "map",
+          "content": {
+            "provider": "Leaflet.js or Google Maps API",
+            "pins": [
+              { "location": "Lagos", "coordinates": [6.5244, 3.3792], "event": "ETHNigeria 2025", "icon": "Ethereum logo with Yoruba drum" }
+            ]
+          }
+        }
+      ]
+    }
+    // Additional sections (search-bar, upcoming-events, past-events, live-stream, call-to-action)
+  ],
+  "technical_requirements": {
+    "framework": "Next.js",
+    "styling": "Tailwind CSS",
+    "backend": "Node.js with MongoDB, Redis for live stream caching",
+    "map": "Leaflet.js or Google Maps API"
+  }
+}
