@@ -29,3 +29,12 @@ This schema defines the structure for the ETHNigeria 2025 website's events page 
     "cultural_element": "Yoruba talking drum animation"
   }
 ]
+
+
+
+## API Endpoints
+- **GET /api/events**: List all events.
+- **GET /api/events/upcoming**: List upcoming events.
+- **GET /api/events/past**: List past events.
+- **GET /api/events/live**: Get live stream status.
+- **Response Format**: JSON array of event objects (see schema for example).
