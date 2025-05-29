@@ -1,0 +1,346 @@
+{
+  "page": "Careers",
+  "url": "ethnigeria.org/careers",
+  "description": "Interactive careers page for ETHNigeria 2025, recruiting interns and volunteers, and showcasing opportunities with partners, infused with Nigerian cultural elements.",
+  "sections": [
+    {
+      "id": "hero",
+      "title": "Join the ETHNigeria Movement",
+      "description": "Be part of Nigeria’s Web3 revolution! Apply as an intern, volunteer, or explore opportunities with our partners to shape the future of Ethereum in Africa.",
+      "components": [
+        {
+          "type": "banner",
+          "content": {
+            "image": "careers-hero.jpg",
+            "alt": "ETHNigeria 2025 careers banner with Nigerian youth coding and Yoruba Adire patterns",
+            "text": "Build Nigeria’s Blockchain Future with Us",
+            "cta": {
+              "text": "Apply Now",
+              "link": "#application-form"
+            },
+            "cultural_elements": [
+              {
+                "type": "background_pattern",
+                "description": "Yoruba Adire textile patterns blended with Ethereum blockchain nodes"
+              },
+              {
+                "type": "animation",
+                "description": "Subtle Igbo Uli swirls animating around CTA button"
+              }
+            ]
+          },
+          "style": {
+            "background": "Gradient of green (#008000, Nigeria flag), white (#FFFFFF), Ethereum purple (#3C3C3D), and Hausa gold (#FFD700)",
+            "animation": "Fade-in with Uli swirl pulse on CTA",
+            "responsive": "Full-width on mobile, centered with cultural motifs on desktop"
+          },
+          "notes": {
+            "graphic_designer": "Design banner with Adire patterns and images of Nigerian youth in tech. Animate CTA with Igbo Uli swirls.",
+            "branding_team": "Use tagline 'Build Nigeria’s Blockchain Future' to inspire action.",
+            "project_manager": "Source authentic Adire imagery from Nigerian artists."
+          }
+        }
+      ]
+    },
+    {
+      "id": "opportunities",
+      "title": "Opportunities at ETHNigeria",
+      "description": "Explore roles to contribute to ETHNigeria 2025, from internships to volunteering, and discover partner opportunities.",
+      "components": [
+        {
+          "type": "opportunity-card-list",
+          "content": {
+            "categories": [
+              {
+                "title": "Internships",
+                "description": "Join our team as an intern to gain hands-on experience in blockchain event planning, tech development, or marketing.",
+                "roles": [
+                  {
+                    "id": "intern-dev",
+                    "title": "Blockchain Developer Intern",
+                    "description": "Work on Ethereum-based DApps, support hackathon teams, and learn from industry experts.",
+                    "skills": ["Solidity", "JavaScript", "Web3.js"],
+                    "duration": "3–6 months",
+                    "location": "Remote or Lagos",
+                    "cultural_element": "Hausa geometric border on card",
+                    "cta": {
+                      "text": "Apply Now",
+                      "link": "/careers/apply?role=intern-dev"
+                    }
+                  },
+                  {
+                    "id": "intern-marketing",
+                    "title": "Marketing Intern",
+                    "description": "Promote ETHNigeria via social media, leveraging Nigeria’s vibrant digital culture.",
+                    "skills": ["Social Media", "Content Creation", "Analytics"],
+                    "duration": "3 months",
+                    "location": "Remote",
+                    "cultural_element": "Yoruba Adire pattern on card hover",
+                    "cta": {
+                      "text": "Apply Now",
+                      "link": "/careers/apply?role=intern-marketing"
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Volunteers",
+                "description": "Support ETHNigeria 2025 as a volunteer, from event coordination to cultural showcases.",
+                "roles": [
+                  {
+                    "id": "volunteer-event",
+                    "title": "Event Volunteer",
+                    "description": "Assist with on-site logistics, registration, and cultural performances (e.g., Yoruba drummers).",
+                    "skills": ["Organization", "Teamwork"],
+                    "duration": "Event week (Aug 2025)",
+                    "location": "Lagos",
+                    "cultural_element": "Igbo Uli swirl animation on card",
+                    "cta": {
+                      "text": "Sign Up",
+                      "link": "/careers/apply?role=volunteer-event"
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Partner Opportunities",
+                "description": "Collaborate with ETHNigeria partners like Flutterwave, Binance, or Ethereum Foundation for career growth.",
+                "roles": [
+                  {
+                    "id": "partner-flutterwave",
+                    "title": "Flutterwave Blockchain Fellowship",
+                    "description": "Join Flutterwave’s Web3 team to build payment solutions on Ethereum.",
+                    "skills": ["Blockchain", "FinTech", "APIs"],
+                    "duration": "6–12 months",
+                    "location": "Lagos or Remote",
+                    "partner_logo": "flutterwave-logo.png",
+                    "cultural_element": "Nok terracotta motif in card border",
+                    "cta": {
+                      "text": "Learn More",
+                      "link": "https://flutterwave.com/careers"
+                    }
+                  }
+                ]
+              }
+            ],
+            "layout": "Grid (3 columns desktop, 1 column mobile)",
+            "sorting": "By category (Internships, Volunteers, Partners)"
+          },
+          "functionality": {
+            "dynamic_loading": "Fetch from /api/careers",
+            "pagination": "Load more button for 10+ roles",
+            "interaction": "Hover for cultural animation, click for role details or application"
+          },
+          "style": {
+            "card_design": "Rounded corners, shadow effect, Ethereum purple (#3C3C3D) and cultural accents (Adire, Uli, Hausa gold)",
+            "animation": "Slide-in on scroll, cultural motif reveal on hover",
+            "responsive": "Adjust grid for mobile and tablet"
+          },
+          "notes": {
+            "graphic_designer": "Design cards with Adire, Uli, and Hausa motifs. Add partner logos with Nok-inspired borders.",
+            "branding_team": "Highlight cultural and tech impact in role descriptions (e.g., 'Support Yoruba drummers').",
+            "project_manager": "Coordinate with partners for accurate opportunity details, test API for role updates."
+          }
+        }
+      ]
+    },
+    {
+      "id": "application-form",
+      "title": "Apply to Join Us",
+      "description": "Submit your application to become an intern, volunteer, or explore partner roles.",
+      "components": [
+        {
+          "type": "form",
+          "content": {
+            "fields": [
+              {
+                "type": "select",
+                "label": "Role Type",
+                "options": ["Internship", "Volunteer", "Partner Opportunity"],
+                "required": true
+              },
+              {
+                "type": "select",
+                "label": "Specific Role",
+                "options": ["Blockchain Developer Intern", "Marketing Intern", "Event Volunteer", "Flutterwave Blockchain Fellowship"],
+                "required": true
+              },
+              {
+                "type": "text",
+                "label": "Full Name",
+                "required": true
+              },
+              {
+                "type": "email",
+                "label": "Email Address",
+                "required": true
+              },
+              {
+                "type": "file",
+                "label": "Resume/CV",
+                "accept": ".pdf,.doc,.docx",
+                "required": true
+              },
+              {
+                "type": "textarea",
+                "label": "Why do you want to join ETHNigeria?",
+                "required": true
+              }
+            ],
+            "submit_button": {
+              "text": "Submit Application",
+              "cultural_element": "Hausa geometric border"
+            }
+          },
+          "functionality": {
+            "submission": "POST to /api/careers/apply",
+            "validation": "Client-side (React Hook Form) and server-side validation",
+            "success_message": "Thank you! We’ll review your application and get back to you soon.",
+            "error_message": "Error submitting form. Please try again.",
+            "accessibility": "ARIA labels, keyboard navigation, error feedback"
+          },
+          "style": {
+            "form_design": "Clean layout, Ethereum purple (#3C3C3D) for submit button, Hausa gold (#FFD700) accents",
+            "animation": "Fade-in fields, pulse on submit button",
+            "responsive": "Stacked fields on mobile, two-column on desktop"
+          },
+          "notes": {
+            "graphic_designer": "Style form with Hausa geometric borders and subtle Uli swirls on input focus.",
+            "branding_team": "Ensure form messaging is inclusive and reflects 'Innovation, Inclusion, Impact' theme.",
+            "project_manager": "Integrate form with backend API, test file uploads, ensure secure data handling."
+          }
+        }
+      ]
+    },
+    {
+      "id": "partners",
+      "title": "Our Partners",
+      "description": "Collaborate with leading organizations driving Nigeria’s Web3 ecosystem.",
+      "components": [
+        {
+          "type": "partner-logo-grid",
+          "content": {
+            "partners": [
+              {
+                "name": "Flutterwave",
+                "logo": "flutterwave-logo.png",
+                "alt": "Flutterwave logo with Nok terracotta border",
+                "link": "https://flutterwave.com"
+              },
+              {
+                "name": "Binance",
+                "logo": "binance-logo.png",
+                "alt": "Binance logo with Hausa geometric border",
+                "link": "https://binance.com"
+              },
+              {
+                "name": "Ethereum Foundation",
+                "logo": "ethereum-foundation-logo.png",
+                "alt": "Ethereum Foundation logo with Adire pattern border",
+                "link": "https://ethereum.org"
+              }
+            ],
+            "layout": "Grid (4 columns desktop, 2 columns mobile)"
+          },
+          "functionality": {
+            "interaction": "Hover for partner description, click to visit partner site",
+            "dynamic_loading": "Fetch from /api/partners"
+          },
+          "style": {
+            "logo_design": "Rounded borders with cultural motifs (Adire, Uli, Hausa)",
+            "animation": "Scale-up on hover, fade-in on scroll",
+            "responsive": "Adjust grid for mobile and tablet"
+          },
+          "notes": {
+            "graphic_designer": "Design partner logos with cultural borders (e.g., Nok for Flutterwave, Adire for Ethereum Foundation).",
+            "branding_team": "Highlight partners’ role in Nigeria’s Web3 ecosystem.",
+            "project_manager": "Confirm partner logos and links with stakeholders."
+          }
+        }
+      ]
+    },
+    {
+      "id": "call-to-action",
+      "title": "Ready to Make an Impact?",
+      "description": "Join ETHNigeria to blend Ethereum innovation with Nigeria’s cultural heritage.",
+      "components": [
+        {
+          "type": "cta-section",
+          "content": {
+            "title": "Get Involved Today",
+            "description": "Apply now or connect with our partners to shape Nigeria’s blockchain future.",
+            "buttons": [
+              {
+                "text": "Apply Now",
+                "link": "#application-form",
+                "cultural_element": "Yoruba Adire border"
+              },
+              {
+                "text": "Contact Us",
+                "link": "/contact",
+                "cultural_element": "Igbo Uli border"
+              }
+            ]
+          },
+          "style": {
+            "background": "Ethereum blue (#62688F) with Hausa geometric overlay",
+            "text": "White (#FFFFFF)",
+            "animation": "Pulse effect on buttons with cultural border reveal"
+          },
+          "notes": {
+            "graphic_designer": "Design CTA buttons with Adire and Uli borders. Use Hausa geometric background.",
+            "branding_team": "Craft inclusive messaging to attract diverse applicants.",
+            "project_manager": "Track CTA clicks via Google Analytics, ensure links are active."
+          }
+        }
+      ]
+    }
+  ],
+  "technical_requirements": {
+    "framework": "Next.js for server-side rendering and SEO",
+    "styling": "Tailwind CSS for responsive design, custom CSS for cultural animations",
+    "backend": "Node.js API with MongoDB for role/partner data, Redis for form submission caching",
+    "form": "React Hook Form for client-side validation, AWS S3 for resume uploads",
+    "accessibility": "WCAG 2.1 compliance (ARIA labels, keyboard navigation, screen reader support)",
+    "performance": "Lazy-load images, optimize API calls, use CDN for partner logos",
+    "analytics": "Google Analytics for page views, form submissions, and CTA clicks"
+  },
+  "branding_guidelines": {
+    "colors": {
+      "primary": "Green (#008000, Nigeria flag)",
+      "secondary": "White (#FFFFFF, Nigeria flag)",
+      "accents": [
+        "Ethereum Purple (#3C3C3D)",
+        "Ethereum Blue (#62688F)",
+        "Igbo Red (#D82C2C)",
+        "Hausa Gold (#FFD700)"
+      ]
+    },
+    "typography": "Inter for tech clarity, Lora for cultural warmth, Nsibidi-inspired accents for headers",
+    "logo": "ETHNigeria logo with Ethereum diamond and Nok terracotta figure",
+    "tone": "Innovative, inclusive, culturally vibrant"
+  },
+  "cultural_elements": [
+    {
+      "name": "Yoruba Adire Patterns",
+      "description": "Textile designs for banners, buttons, and card hovers, symbolizing creativity."
+    },
+    {
+      "name": "Igbo Uli Designs",
+      "description": "Swirling patterns for form fields and CTA borders, representing artistry."
+    },
+    {
+      "name": "Hausa Geometric Motifs",
+      "description": "Angular patterns for card borders and partner logos, reflecting northern Nigerian heritage."
+    },
+    {
+      "name": "Nok Terracotta Motif",
+      "description": "Ancient Nigerian art for partner logos and hero banner, grounding the page in history."
+    }
+  ],
+  "notes": {
+    "graphic_designer": "Integrate Adire, Uli, Hausa, and Nok motifs across sections. Use animations (e.g., Uli swirls on form focus) for engagement. Ensure mobile-first design.",
+    "branding_team": "Emphasize Nigeria’s cultural diversity and Web3 innovation in messaging. Align with 'Innovation, Inclusion, Impact' theme.",
+    "project_manager": "Coordinate with developers for form and API integration. Source cultural assets from Nigerian artists. Test performance in Nigeria’s network conditions."
+  }
+}
