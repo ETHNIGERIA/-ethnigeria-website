@@ -344,3 +344,41 @@
     "project_manager": "Coordinate with developers for form and API integration. Source cultural assets from Nigerian artists. Test performance in Nigeria’s network conditions."
   }
 }
+
+
+
+
+Example API Response for Careers 
+
+
+[
+  {
+    "id": "intern-dev",
+    "category": "Internships",
+    "title": "Blockchain Developer Intern",
+    "description": "Work on Ethereum-based DApps, support hackathon teams, and learn from experts.",
+    "skills": ["Solidity", "JavaScript", "Web3.js"],
+    "duration": "3–6 months",
+    "location": "Remote or Lagos",
+    "cultural_element": "Hausa geometric border",
+    "cta": {
+      "text": "Apply Now",
+      "link": "/careers/apply?role=intern-dev"
+    }
+  },
+  {
+    "id": "partner-flutterwave",
+    "category": "Partner Opportunities",
+    "title": "Flutterwave Blockchain Fellowship",
+    "description": "Join Flutterwave’s Web3 team to build payment solutions on Ethereum.",
+    "skills": ["Blockchain", "FinTech", "APIs"],
+    "duration": "6–12 months",
+    "location": "Lagos or Remote",
+    "partner_logo": "flutterwave-logo.png",
+    "cultural_element": "Nok terracotta motif",
+    "cta": {
+      "text": "Learn More",
+      "link": "https://flutterwave.com/careers"
+    }
+  }
+]
